@@ -26,6 +26,7 @@ public class UserMapperTest {
     public void testUserSelect()
     {
         List<User> userList = userMapper.selectList(null);
+
         Assert.assertEquals(5, userList.size());
         userList.forEach(System.out::println);
 
